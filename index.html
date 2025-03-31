@@ -2,10 +2,177 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>LynxAI 공식 사이트</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LynxAI | 스마트한 일상을 만드는 AI 파트너</title>
+  <style>
+    :root {
+      --primary: #3498db;
+      --dark: #1e2a38;
+      --light: #f9fafc;
+      --text: #333;
+      --muted: #666;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--dark);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    section.apps {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section.apps h2 {
+      font-size: 1.8em;
+      margin-bottom: 30px;
+    }
+
+    .app-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .app-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+      width: 280px;
+      padding: 20px;
+      transition: transform 0.2s ease;
+      flex: 1 1 280px;
+      max-width: 300px;
+    }
+
+    .app-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .app-card h3 {
+      margin-top: 0;
+    }
+
+    .app-card p {
+      color: #555;
+      font-size: 0.95em;
+      min-height: 60px;
+    }
+
+    .app-card a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 20px;
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: var(--muted);
+    }
+
+    .links a {
+      margin: 0 10px;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    /* ✅ 반응형 미디어 쿼리 */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .app-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .app-card {
+        width: 90%;
+        max-width: 400px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 40px 15px;
+      }
+
+      section.apps {
+        padding: 40px 15px;
+      }
+
+      footer {
+        padding: 20px 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>환영합니다, LynxAI입니다 🚀</h1>
-  <p>이 페이지는 GitHub Pages를 통해 배포되고 있습니다.</p>
+
+<header>
+  <h1>LynxAI</h1>
+  <p>스마트한 일상을 만드는 AI 파트너</p>
+</header>
+
+<section class="apps">
+  <h2>우리의 앱들</h2>
+  <div class="app-grid">
+    <div class="app-card">
+      <h3>이력서 & 자기소개서 도우미</h3>
+      <p>AI로 빠르고 간편하게 이력서를 작성해보세요.</p>
+      <a href="#">앱 보기</a>
+    </div>
+    <div class="app-card">
+      <h3>곧 출시 예정</h3>
+      <p>더 많은 앱들이 준비 중입니다. 기대해 주세요!</p>
+      <a href="#">자세히 보기</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="links">
+    <a href="/privacy.html">개인정보처리방침</a>
+    <a href="/delete-account.html">계정 삭제 요청</a>
+    <a href="mailto:support@lynxai.io">문의하기</a>
+  </div>
+  <p>&copy; 2025 LynxAI. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
