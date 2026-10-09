@@ -1,0 +1,12 @@
+실제 PDF 파일을 이 폴더에 넣으세요.
+
+business-registration-ko.pdf : 국문 사업자등록 관련 자료
+business-registration-en.pdf : 영문 참고 번역본 또는 공식 영문 증명서
+
+영문은 기본적으로 참고 번역본으로 표시됩니다.
+실제 정부 발급 영문 문서인 경우에만 assets/document-settings.js에서
+englishType을 official로 변경하세요.
+
+민감한 개인정보를 포함한 원본을 그대로 공개하지 마세요.
+비공개 제출을 원하면 여기에 PDF를 넣지 않고 홈페이지의 이메일 요청 링크를 사용하세요.
+
